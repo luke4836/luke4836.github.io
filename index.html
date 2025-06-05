@@ -1,80 +1,135 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>新版無人機操作證測驗 App</title>
+  <title>UAV License Exam | Official App by TZU YU CHIU</title>
   <style>
-    body {
-      font-family: "Helvetica Neue", sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
-      color: #333;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #1976d2;
-      color: white;
-      padding: 2rem;
+
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background: linear-gradient(to bottom right, #dbeafe, #e0f2fe);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffffee;
+      padding: 2.5rem;
+      border-radius: 20px;
+      max-width: 650px;
+      margin: 3rem auto 2rem auto;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
     }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2 {
-      color: #0d47a1;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    li {
+
+    .card h1 {
+      font-size: 2.4rem;
+      color: #1e3a8a;
       margin-bottom: 1rem;
-      line-height: 1.6;
     }
-    .section {
+
+    .card p {
+      font-size: 1.1rem;
+      color: #1f2937;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      font-size: 1rem;
+      background: linear-gradient(to right, #3b82f6, #2563eb);
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(37, 99, 235, 0.4);
+    }
+
+    .hero-img {
+      max-width: 160px;
+      margin-bottom: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .links {
       margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      color: #2563eb;
+      text-decoration: none;
+      margin: 0 0.8rem;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #4b5563;
+      padding: 1.5rem 1rem;
+      background-color: #f9fafb;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 1.5rem;
+      }
+
+      .card h1 {
+        font-size: 1.8rem;
+      }
+
+      .card p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="card">
+    <img class="hero-img" src="https://developer.apple.com/assets/elements/icons/app-store/app-store-128x128_2x.png" alt="App Icon" />
+    <h1>UAV License Exam</h1>
+    <p>
+      A professionally designed mobile app tailored for the <strong>Taiwan Civil Aviation Administration’s Remote Pilot Certificate Exam</strong>. <br><br>
+      This app offers full access to the latest question banks, categorized practice, simulation exams, error reviews, and performance tracking — empowering you to study anytime, anywhere with confidence.
+    </p>
+    <a class="btn" href="https://apps.apple.com/app/無人機操作證測驗/id6746773880" target="_blank">🚀 Download on the App Store</a>
 
-  <header>
-    <h1>新版無人機各類操作證測驗</h1>
-    <p>維持最新版本無人機測驗題庫，無需擔心使用題庫過期或變更的問題</p>
-  </header>
+    <div class="links">
+      <a href="https://www.privacypolicies.com/live/843798e1-19e6-4ea8-8f1f-e713dd131b07" target="_blank">Privacy Policy</a> |
+      <a href="https://www.instagram.com/luke.chiu.0425/" target="_blank">Instagram</a>
+    </div>
+  </div>
 
-  <main>
-    <section class="section">
-      <h2>📘 學習</h2>
-      <ul>
-        <li>擁有完整的普通操作證、專業操作證與專業操作證屆期換證題庫</li>
-        <li>使用收合方式進行，讓使用者可以最快速度複習重點</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>🎯 自訂隨機測驗</h2>
-      <ul>
-        <li>透過自訂滑動控制，自訂每章節抽出多少百分比的題庫</li>
-        <li>模擬民航局實際測驗情境，提升臨場應對能力</li>
-        <li>可根據學習進度調整題庫量，提升學習效率</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>📝 錯題本</h2>
-      <ul>
-        <li>自動記錄錯題，依據答題日期進行統整</li>
-        <li>幫助使用者針對弱點加強，強化記憶</li>
-      </ul>
-    </section>
-  </main>
-
+  <footer>
+    © 2025 TZU YU CHIU. All rights reserved.<br>
+    For inquiries, contact: <a href="mailto:lukechiu@me.com">lukechiu@me.com</a>
+  </footer>
 </body>
 </html>
